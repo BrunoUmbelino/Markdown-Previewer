@@ -1,6 +1,5 @@
 import React from "react";
 import { Row, Col, Container, Input, Label } from "reactstrap";
-import "./App.css";
 
 export class MainComponent extends React.Component {
   constructor(props) {
@@ -10,12 +9,12 @@ export class MainComponent extends React.Component {
   }
 
   handleChange(e) {
-    let value = e.target.value;
+    const value = e.target.value;
     this.setState({ textEditor: value });
   }
 
   componentDidMount() {
-    fetch("data.txt")
+    fetch("testData.txt")
       .then((response) => {
         return response.text();
       })
@@ -35,7 +34,7 @@ export class MainComponent extends React.Component {
           <Row className="title justify-content-center">
             <h1>Markdown Previewer</h1>
           </Row>
-          <Row>
+          <Row className="col-container">
             <Col md={6}>
               <Label className="label" for="editor ">
                 <h3>Editor</h3>
@@ -44,6 +43,7 @@ export class MainComponent extends React.Component {
                 id="editor"
                 type="textarea"
                 name="textarea"
+                rows="15"
                 value={this.state.textEditor}
                 onChange={this.handleChange}
               />
@@ -59,6 +59,9 @@ export class MainComponent extends React.Component {
                 }}
               ></div>
             </Col>
+          </Row>
+          <Row className="justify-content-center">
+            <div className="by">By Bruno Umbelino</div>
           </Row>
         </Container>
       </div>
