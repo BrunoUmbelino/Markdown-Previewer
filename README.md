@@ -4,7 +4,7 @@ Link: https://brunoumbelino.github.io/Markdown-Previewer/
 
 ### Description
 
-Markdown-Previewer is an application that formats texts using Markdown markup language. 
+**Markdown-Previewer** is an application that formats texts using Markdown markup language. The project was developed as a solution to the **‘Markdown Previewer’** challenge proposed by the [FreeCodeCamp](freecodecamp.org/) community in Front End Development Libraries certification, in the upper left part of the screen it is possible to use the test suite proposed by challenge. 
 
 ### Technologies
 
