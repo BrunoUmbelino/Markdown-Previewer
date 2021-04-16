@@ -37,7 +37,7 @@ export class MainComponent extends React.Component {
           <Row className="col-container">
             <Col md={6}>
               <Label className="label" for="editor ">
-                <h3>Editor</h3>
+                <h2>Editor</h2>
               </Label>
               <Input
                 id="editor"
@@ -50,7 +50,7 @@ export class MainComponent extends React.Component {
             </Col>
             <Col md={6}>
               <Label className="label" for="preview">
-                <h3>Preview</h3>
+                <h2>Preview</h2>
               </Label>
               <div
                 id="preview"
