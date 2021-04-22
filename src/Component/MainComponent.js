@@ -41,6 +41,7 @@ export class MainComponent extends React.Component {
               </Label>
               <Input
                 id="editor"
+                className='editor'
                 type="textarea"
                 name="textarea"
                 rows="15"
@@ -54,6 +55,7 @@ export class MainComponent extends React.Component {
               </Label>
               <div
                 id="preview"
+                className='preview'
                 dangerouslySetInnerHTML={{
                   __html: marked(this.state.textEditor),
                 }}

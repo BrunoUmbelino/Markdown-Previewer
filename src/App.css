@@ -23,13 +23,12 @@
   text-align: center;
 }
 
-#editor,
-#preview {
+.editor,
+.preview {
+  min-height: 800px;
   padding: 1.5rem;
   background-color: ghostwhite;
   border-radius: 10px;
-  min-height: auto;
-  min-height: 100vh;
 }
 
 .by {
